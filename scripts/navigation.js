@@ -25,7 +25,6 @@ const courses = [
 
 const courseElement = document.getElementById('courses');
 
-// Create filter buttons dynamically
 const certSection = document.getElementById('certs');
 const filterDiv = document.createElement('div');
 filterDiv.classList.add('filter-buttons');
@@ -39,12 +38,10 @@ filterDiv.classList.add('filter-buttons');
 });
 certSection.insertBefore(filterDiv, courseElement);
 
-// Add total credits placeholder
 const creditDiv = document.createElement('div');
 creditDiv.id = 'creditTotal';
 certSection.appendChild(creditDiv);
 
-// Render courses
 function renderCourses(courseArray) {
   courseElement.innerHTML = ''; // Clear existing content
 
@@ -57,19 +54,15 @@ function renderCourses(courseArray) {
       courseDiv.classList.add('completed');
     }
 
-    // Display only course code: subject + number
     courseDiv.textContent = `${course.subject} ${course.number}`;
     courseElement.appendChild(courseDiv);
 
-    // Add credits
     totalCredits += course.credits;
   });
 
-  // Update credits total
   creditDiv.textContent = `The total credits for courses listed above is ${totalCredits}`;
 }
 
-// Filter logic
 function filterCourses(subject) {
   let filteredCourses = courses;
   if (subject !== 'All') {
@@ -78,10 +71,8 @@ function filterCourses(subject) {
   renderCourses(filteredCourses);
 }
 
-// Add event listeners to filter buttons
 filterDiv.querySelectorAll('button').forEach(button => {
   button.addEventListener('click', () => {
-    // Reset aria-pressed
     filterDiv.querySelectorAll('button').forEach(btn => btn.setAttribute('aria-pressed', false));
     button.setAttribute('aria-pressed', true);
 
@@ -89,5 +80,4 @@ filterDiv.querySelectorAll('button').forEach(button => {
   });
 });
 
-// Initial render (All courses)
 renderCourses(courses);
