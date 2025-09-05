@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="This is for my course website.">
+    <meta name="author" content="Victoria Massela">
+    <title>Course Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <img src="images/face.svg" alt="This is the logo" width="800" height="800">
+        <span>Victoria</span>
+        <button id="han-btn" class="hanburger"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        <div class="container">
+            <section class="paragraph">
+                <h2>About Me</h2>
+                <p>
+                    I am Victoria Massela and when I am not doom scrolling,
+                    doing pilates, learning chess, reading or trying new recipes,
+                    you can find me sitting on my laptop for hours doing my programming assignments.
+                    To say that I am ecstatic about completing my first
+                    BYU online certificate course would be an understatement. The day I can call myself a degree holder will
+                    mean so much to me. I do have plans to further my education, but let's focus on the current journey haha.
+                </p>
+            </section>
+
+            <section class="photo">
+                <h2>Student Photo</h2>
+                <p><img src="images/victoria.jpg" alt="Victoria Massela"></p>
+            </section>
+
+            <section id="certs">
+                <h2>Web Certificate Courses</h2>
+                <!-- JS will insert filter buttons here -->
+                <div id="courses"></div>
+                <!-- JS will insert credit total here -->
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="socials">
+            <a href="https://github.com/vee-mass" target="_blank"><img src="images/github.svg" width="50" height="50" alt="GitHub"></a>
+            <a href="https://www.instagram.com/vee.pngz/" target="_blank"><img src="images/instagram.svg" width="50" height="50" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/victoria-massela-7782462b1/" target="_blank"><img src="images/linkedin.svg" width="50" height="50" alt="LinkedIn"></a>
+            <a href="https://icons8.com/" target="_blank"><img src="images/icons8.svg" alt="Icons8"></a>
+        </div>
+
+        <p>&copy; <span id="currentYear"></span> Victoria South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/navigation.js" defer></script>
 </body>
 </html>
