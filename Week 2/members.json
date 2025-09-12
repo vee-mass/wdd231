@@ -1,0 +1,30 @@
+
+{
+    "familyName": "Smith",
+    "moveInDate": "11 June 2022",
+    "numberFamilyMembers": 3,
+    "ifBishopricVisited": true,
+    "famMemberData" : [
+        {
+      "name": "Pedro Santos",
+      "gender": "Male",
+      "birthdate": "1990-05-15"
+    },
+    {
+      "name": "Maria Santos",
+      "gender": "Female",
+      "birthdate": "1992-08-20"
+    },
+    {
+      "name": "Andrea Santos",
+      "gender": "Female",
+      "birthdate": "2010-03-05"
+    },
+    {
+      "name": "Luz Santos",
+      "gender": "Male",
+      "birthdate": "2012-11-10"
+    }
+    ]
+
+}

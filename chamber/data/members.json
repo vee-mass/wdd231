@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Union Buildings",
+      "address": "Government Ave, Arcadia, Pretoria",
+      "phone": "+27 12 300 5200",
+      "website": "https://www.thepresidency.gov.za/union-buildings",
+      "image": "union-buildings.jpg",
+      "membership": "Gold"
+    },
+    {
+      "name": "Brooklyn Mall",
+      "address": "Cnr Veale & Fehrsen St, Nieuw Muckleneuk, Pretoria",
+      "phone": "+27 12 346 1063",
+      "website": "https://www.brooklynmall.co.za",
+      "image": "brooklyn-mall.jpg",
+      "membership": "Silver"
+    },
+    {
+      "name": "Menlyn Park Shopping Centre",
+      "address": "Atterbury Rd & Lois Ave, Menlyn, Pretoria",
+      "phone": "+27 12 764 9600",
+      "website": "https://www.menlynpark.co.za",
+      "image": "menlyn-park.jpg",
+      "membership": "Gold"
+    },
+    {
+      "name": "Pretoria Zoo (National Zoological Gardens)",
+      "address": "232 Boom St, Daspoort 319-Jr, Pretoria",
+      "phone": "+27 12 339 2700",
+      "website": "https://www.pretoriazoo.org/",
+      "image": "pretoria-zoo.jpg",
+      "membership": "Member"
+    },
+    {
+      "name": "Loftus Versfeld Stadium",
+      "address": "416 Kirkness St, Arcadia, Pretoria",
+      "phone": "+27 12 420 0700",
+      "website": "https://www.bluebullsrugby.com",
+      "image": "loftus.jpg",
+      "membership": "Silver"
+    },
+    {
+      "name": "Hazel Food Market",
+      "address": "Greenlyn Village Centre, Thomas Edison St, Menlo Park, Pretoria",
+      "phone": "+27 82 335 5659",
+      "website": "https://www.hazelfoodmarket.co.za",
+      "image": "hazel-market.jpg",
+      "membership": "Gold"
+    },
+    {
+      "name": "Freedom Park Heritage Site & Museum",
+      "address": "Koch St, Salvokop, Pretoria",
+      "phone": "+27 12 336 4000",
+      "website": "https://www.freedompark.co.za",
+      "image": "freedom-park.jpg",
+      "membership": "Member"
+    }
+  ]
+}

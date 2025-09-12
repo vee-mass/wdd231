@@ -1,0 +1,143 @@
+body {
+  font-family: 'Lato', 'Open Sans', sans-serif;
+  background-color: #C5E7E2;
+  color: #627264;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #B996C6; 
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+nav a.active,
+nav a:hover {
+  background-color: #A1CDA8; 
+  color: #333;
+}
+
+.directory-controls {
+  text-align: center;
+  padding: 1rem;
+  background-color: #FAF8F6; 
+}
+
+.view-buttons {
+  margin-top: 0.5rem;
+}
+
+.view-buttons button {
+  background-color: #A1CDA8;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+}
+
+.view-buttons button:hover {
+  background-color: #B5DFCA;
+}
+
+#members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+#members.list {
+  display: block;
+}
+
+.card {
+  background-color: #B5DFCA;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h2 {
+  margin-top: 0;
+  color: #B996C6;
+  font-size: 1.2rem;
+}
+
+.card-content p {
+  margin: 0.25rem 0;
+}
+
+.card-content a {
+  color: #627264;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card-content a:hover {
+  text-decoration: underline;
+}
+
+#members.list .card {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  height: auto;
+}
+
+#members.list .card img {
+  display: none;
+}
+
+#members.list .card-content {
+  padding: 0;
+}
+
+footer {
+  background-color: #627264;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
