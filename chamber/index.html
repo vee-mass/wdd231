@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pretoria Jacaranda Chamber of Commerce - Home Page">
+  <meta name="author" content="Victoria Massela">
+  <title>Pretoria Jacaranda Chamber | Home</title>
+  <link rel="icon" href="images/favicon.ico">
+  <meta property="og:title" content="Pretoria Jacaranda Chamber of Commerce">
+  <meta property="og:description" content="Welcome to the Pretoria Jacaranda Chamber of Commerce. Connect, grow, and network with local businesses.">
+  <meta property="og:image" content="https://github.com/vee-mass/wdd231/blob/main/chamber/images/jacaranda.jpg">
+  <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/index.html">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav> 
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="hero">
+      <img src="images/jacaranda.jpg" alt="Jacaranda trees in Pretoria">
+      <div class="hero-text">
+        <h1>Welcome to the Pretoria Jacaranda Chamber</h1>
+        <a href="join.html" class="btn">Join the Chamber</a>
+      </div>
+    </section>
+
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>🌸 Jacaranda Festival – October 12, 2025</li>
+        <li>🤝 Networking Breakfast – November 2, 2025</li>
+        <li>🎄 Holiday Market – December 15, 2025</li>
+      </ul>
+    </section>
+
+    <section id="weather">
+      <h2>Local Weather</h2>
+      <p id="current-temp"></p>
+      <p id="current-desc"></p>
+      <div id="forecast"></div>
+    </section>
+
+    <section id="spotlights">
+      <h2>Member Spotlights</h2>
+      <div class="spotlight-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact Information: info@pretoriachamber.org | Tel: 012-123-4567</p>
+    <p>&copy; <span id="currentYear"></span> Pretoria Jacaranda Chamber of Commerce</p>
+    <p>Victoria Massela | WDD231</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlights.js" defer></script>
+</body>
+</html>
