@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="images/favicon.ico" />
+  <meta property="og:title" content="Pretoria Jacaranda Chamber of Commerce" />
+  <meta property="og:description" content="Welcome to the Pretoria Jacaranda Chamber of Commerce. Connect, grow, and network with local businesses." />
+  <meta property="og:image" content="https://github.com/vee-mass/wdd231/blob/main/chamber/images/jacaranda.jpg" />
+  <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/index.html" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <title>Join - Pretoria Jacaranda Chamber of Commerce</title>
+</head>
+<body>
+  <header>
+    <h1>Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="join-container">
+    <section class="form-section">
+      <h2>Membership Application</h2>
+      <form method="get" action="thankyou.html">
+        
+        <label>
+          First Name:
+          <input type="text" name="firstName" title="First Name" autocomplete="given-name" required>
+        </label>
+
+        <label>
+          Last Name:
+          <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required>
+        </label>
+
+        <label>
+          Organizational Title:
+          <input type="text" name="orgTitle" title="Organization Title" autocomplete="organization-title"
+                 pattern="[A-Za-z\- ]{7,}">
+        </label>
+
+        <label>
+          Email:
+          <input type="email" name="email" title="Email" autocomplete="email" placeholder="example@email.com" required>
+        </label>
+
+        <label>
+          Mobile Phone:
+          <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required>
+        </label>
+
+        <label>
+          Business / Organization Name:
+          <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
+        </label>
+
+        <label>
+          Membership Level:
+          <select name="membership" title="Membership Level" required>
+            <option value="">-- Select Level --</option>
+            <option value="np">NP Membership (Free)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label>
+          Business Description:
+          <textarea name="description" title="Business Description" rows="4"></textarea>
+        </label>
+
+        <input type="hidden" name="timestamp" id="timestamp">
+
+        <input type="submit" value="Submit Application">
+      </form>
+    </section>
+
+    <aside class="membership-cards">
+      <div class="card">
+        <h3>NP Membership</h3>
+        <p>Perfect for non-profits. Free membership.</p>
+        <a href="#" data-modal="np-modal" class="learn-more">Learn More</a>
+      </div>
+
+      <div class="card">
+        <h3>Bronze Membership</h3>
+        <p>Affordable entry with essential benefits.</p>
+        <a href="#" data-modal="bronze-modal" class="learn-more">Learn More</a>
+      </div>
+
+      <div class="card">
+        <h3>Silver Membership</h3>
+        <p>More visibility and perks for growing businesses.</p>
+        <a href="#" data-modal="silver-modal" class="learn-more">Learn More</a>
+      </div>
+
+      <div class="card">
+        <h3>Gold Membership</h3>
+        <p>Maximum benefits and spotlight opportunities.</p>
+        <a href="#" data-modal="gold-modal" class="learn-more">Learn More</a>
+      </div>
+    </aside>
+  </main>
+
+  <div id="np-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Non-Profit Membership</h3>
+      <p>Free membership for non-profits with access to community events and networking opportunities.</p>
+    </div>
+  </div>
+
+  <div id="bronze-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Bronze Membership</h3>
+      <p>Includes event invitations, training sessions, and basic advertising opportunities.</p>
+    </div>
+  </div>
+
+  <div id="silver-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Silver Membership</h3>
+      <p>All Bronze benefits plus homepage spotlight features and event discounts.</p>
+    </div>
+  </div>
+
+  <div id="gold-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Gold Membership</h3>
+      <p>All Silver benefits plus premium advertising, special events, and maximum exposure.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Contact Information: <a href="mailto:info@pretoriachamber.org">info@pretoriachamber.org</a> | Tel: 012-123-4567</p>
+    <p>&copy; <span id="currentYear"></span> Pretoria Jacaranda Chamber of Commerce</p>
+    <p>Victoria Massela | WDD231</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>

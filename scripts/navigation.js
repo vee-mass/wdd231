@@ -1,6 +1,31 @@
 const navbutton = document.querySelector('#han-btn');
 const navlink = document.querySelector('#nav-bar');
 
+const modal = document.getElementById("myModal");
+const closeModal = document.getElementById('closeModal')
+
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = '';
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+  courseDetails.showModal();
+  
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
+  });
+}
+
+courseDiv.addEventListener('click', () => {
+  displayCourseDetails(course);
+});
+
 navbutton.addEventListener('click', () => {
   navbutton.classList.toggle('show');
   navlink.classList.toggle('show');
