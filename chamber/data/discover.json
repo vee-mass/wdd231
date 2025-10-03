@@ -1,0 +1,52 @@
+{
+  "places": [
+    {
+      "name": "Union Buildings",
+      "image": "union-buildings.jpg",
+      "address": "Government Ave, Pretoria",
+      "description": "Historic government buildings with beautiful gardens and panoramic views."
+    },
+    {
+      "name": "Pretoria National Botanical Garden",
+      "image": "botanical-garden.jpg",
+      "address": "2 Cussonia Ave, Pretoria",
+      "description": "Vibrant gardens showcasing indigenous flora."
+    },
+    {
+      "name": "Voortrekker Monument",
+      "image": "menlyn-park.jpg",
+      "address": "Villieria, Pretoria",
+      "description": "A grand monument commemorating the Voortrekkers' history."
+    },
+    {
+      "name": "Freedom Park",
+      "image": "freedom-park.jpg",
+      "address": "On Boy Du Plessis Dr, Pretoria",
+      "description": "Heritage site honoring those who fought for freedom in South Africa."
+    },
+    {
+      "name": "Church Square",
+      "image": "church-square.jpg",
+      "address": "Paul Kruger St, Pretoria",
+      "description": "Historic square in the city center surrounded by iconic buildings."
+    },
+    {
+      "name": "Brooklyn Mall",
+      "image": "brooklyn-mall.jpg",
+      "address": "Rietvlei Rd, Pretoria",
+      "description": "Popular shopping centre in Brooklyn."
+    },
+    {
+      "name": "Hazel Food Market",
+      "image": "hazel-market.jpg",
+      "address": "Menlo Park, Pretoria",
+      "description": "Local market offering fresh produce, crafts, and local delicacies."
+    },
+    {
+      "name": "Pretoria Art Museum",
+      "image": "pretoria-art-museum.jpg",
+      "address": "Arcadia, Pretoria",
+      "description": "Extensive collection of South African and international art."
+    }
+  ]
+}
